@@ -1,0 +1,15 @@
+   class my_module::apache2 {
+
+$packages= ['apache2','git']
+package{$packages:
+        ensure=> "present",
+}
+
+exec{'git clone':
+
+command=> "sudo git clone https://github.com/hshar94/helloworld.git",
+path    => ['/usr/bin', '/usr/sbin',],
+}
+
+
+}

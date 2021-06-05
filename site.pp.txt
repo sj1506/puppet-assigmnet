@@ -1,0 +1,11 @@
+node 'ip-172-31-37-159.ap-south-1.compute.internal'{
+
+include my_module::apache2
+
+}
+
+node ' ip-172-31-45-8.ap-south-1.compute.internal'{
+
+include my_module::apache2
+
+}
